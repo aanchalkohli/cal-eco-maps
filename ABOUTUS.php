@@ -22,7 +22,7 @@
 <div style="text-align: center;"><IMG SRC="assets/img/teamPhoto.jpg" ALT="UCLA TRI Team" width="80%" height="auto"></div>
 
 <br>
-<p class= "p2">From left to right: Fannie Hsieh, Larry Lai, Audrey Vinant-Tang, Ha Hyun Chung, Magali Delmas, Aanchal Kohil, Carmen Ehlinger, Amy Tat and Leanna Huynh.</p>
+<p class= "p2">From left to right: Jon Van Lew, Fannie Hsieh, Larry Lai, Audrey Vinant-Tang, Ha Hyun Chung, Magali Delmas, Aanchal Kohil, Carmen Ehlinger, Amy Tat and Leanna Huynh.</p>
 
 <br>
 
