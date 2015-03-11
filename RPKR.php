@@ -14,7 +14,7 @@
 <h2>Units: lbs/$1000</h2> <br><br>
 Toxic Releases per $1000 of Revenue represents the facility’s efficiency at generating the least amount of toxic releases for a standardized amount of revenue. This is the first known project to measure a facility’s environmental impact relative to its fiscal performance by standardizing each facility’s pounds of toxic releases with respect to $1000 of its annual revenue . We gathered facility annual revenue data from ReferenceUSA, Hoovers, and Orbis.
 <br><br>
-More information on this variable and how it was used to calculate the <a href="eismethodology.php" target="_blank">Cal EcoMaps Environmental Impact Score</a> can be found in our <a href="Report.php" target="_blank">report</a>. 
+More information on this variable and how it was used to calculate the <a href="eismethodology.php" target="_blank">Cal EcoMaps Environmental Impact Score</a> can be found in our <a href="report.php" target="_blank">report</a>. 
 
 
 <br><br>

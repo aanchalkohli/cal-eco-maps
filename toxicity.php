@@ -14,7 +14,7 @@
 <h2>Units: lbs x toxicity</h2> <br><br>
 Toxicity of Total Releases is provided by the TRI and measures the relative health-related impacts between different facilities. The facility’s total toxic releases is multiplied by a specific toxicity factor determined by the EPA’s Risk Screening Environmental Indicators (RSEI) for each chemical released. Only toxicity of on-site toxic releases were considered for this local analysis of health-related impacts. 
 <br><br>
-More information on this variable and how it was used to calculate the <a href="eismethodology.php" target="_blank">Cal EcoMaps Environmental Impact Score</a> can be found in our <a href="Report.php" target="_blank">report</a>. 
+More information on this variable and how it was used to calculate the <a href="eismethodology.php" target="_blank">Cal EcoMaps Environmental Impact Score</a> can be found in our <a href="report.php" target="_blank">report</a>. 
 <br><br>
 
 Sources:<a href="http://www.epa.gov/opptintr/rsei/tools/glossary.html" target="_blank">RSEI</a>

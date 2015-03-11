@@ -36,17 +36,17 @@
 				<li class="divider"></li>
 				  <li><t><a href="eismethodology.php" style="color: DarkGreen">Cal EcoMaps Environmental Impact Score</a></t></li>
 				  <li class="divider"></li>
-                  <li><a href="Methodology.php">Scope</a></li>
+                  <li><a href="methodology.php">Scope</a></li>
 				  <li class="divider"></li>
 				  <li><t><a href="eri.php" style="color: DarkGreen">Environmental Impact Indicators</a></t></li>
 				  <li class="divider"></li>
-                  <li><a href="TOTALTOXICRELEASES.php">Total Toxic Releases</a></li>
-                  <li><a href="RPKR.php">Releases per $1000 Revenue</a></li>
+                  <li><a href="toaltoxicreleases.php">Total Toxic Releases</a></li>
+                  <li><a href="rpkr.php">Releases per $1000 Revenue</a></li>
 				  <li><a href="toxicity.php">Toxicity of Total Releases</a></li>
-				  <li><a href="CancerMethod.php">Regional Contribution to Lifetime Cancer Risk </a></li>
+				  <li><a href="cancermethod.php">Regional Contribution to Lifetime Cancer Risk </a></li>
                   <!--<li class="divider"></li>
                   <li class="dropdown-header">Nav header</li>-->
-                  <li><a href="PPWMA.php">Preferred Waste Management Activities</a></li>
+                  <li><a href="ppwma.php">Preferred Waste Management Activities</a></li>
                   
 				  
 				  
@@ -60,33 +60,33 @@
 				<li class="divider"></li>
 				<li><t>Environmental Impact Score Ranking Lists</t></li>
 				  <li class="divider"></li>
-                  <li><a href="PetroScores.php">Petroleum </a></li>
-                  <li><a href="FMscores.php">Fabricated Metals </a></li>
-                  <li><a href="PMScores.php">Primary Metals </a></li>
+                  <li><a href="petroscores.php">Petroleum </a></li>
+                  <li><a href="fmscores.php">Fabricated Metals </a></li>
+                  <li><a href="pmscores.php">Primary Metals </a></li>
                   <!--<li class="divider"></li>
                   <li class="dropdown-header">Nav header</li>-->
 				  
-                  <li><a href="ChemScores.php">Chemicals </a></li>
+                  <li><a href="chemscores.php">Chemicals </a></li>
 				  <li class="divider"></li>
 				  <li class="divider"></li>
 				  <li><t>Industry Top 10 Facilities Graphs</t></li>
 				  <li class="divider"></li>
-				  <li><a href="PMranking.php">Primary Metals</a></li>
-                  <li><a href="Petroranking.php">Petroleum</a></li>
-                  <li><a href="FMranking.php">Fabricated Metals</a></li>
+				  <li><a href="pmranking.php">Primary Metals</a></li>
+                  <li><a href="petroranking.php">Petroleum</a></li>
+                  <li><a href="fmranking.php">Fabricated Metals</a></li>
                   <!--<li class="divider"></li>
                   <li class="dropdown-header">Nav header</li>-->
-                  <li><a href="Chemicalsranking.php">Chemicals</a></li>
+                  <li><a href="chemicalsranking.php">Chemicals</a></li>
 				  
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="Report.php">Report</a></li>
+                  <li><a href="report.php">Report</a></li>
 				  <li><a href="factsheet.php">Fact Sheet</a></li>
 				  <li><a href="powerpoint.php">Powerpoint Summary</a></li>
-				  <li><a href="Manual.php">Site Manual</a></li>
+				  <li><a href="manual.php">Site Manual</a></li>
 				  <li><a href="mastersheet.php">Data Sheets</a></li>
                   <!--<li><a href="">Excel Data</a></li>-->
                
@@ -97,14 +97,14 @@
 			  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="ABOUTUS.php">Project Members</a></li>
-				  <li><a href="Acknowledgements.php">Acknowledgements</a></li>
+                  <li><a href="aboutus.php">Project Members</a></li>
+				  <li><a href="acknowledgements.php">Acknowledgements</a></li>
                   <!--<li><a href="">Excel Data</a></li>-->
                
 				  
                 </ul>
               </li>
-			  <li><a href="FeedbackPage.php">Feedback</a></li>
+			  <li><a href="feedback.php">Feedback</a></li>
               
             </ul>
                      </div><!--/.nav-collapse -->

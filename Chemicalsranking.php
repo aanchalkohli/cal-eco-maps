@@ -238,13 +238,13 @@
 <?php include('header.php'); ?>
 <div align="center"><h2>Total Toxic Releases <a href="TOTALTOXICRELEASES.php " target="_blank">[?]</a></h2></div>
 <div id="ToxicReleases"></div><br>
-<div align="center"><h2>Releases per $1000 Revenue <a href="RPKR.php" target="_blank">[?]</a></h2></div>
+<div align="center"><h2>Releases per $1000 Revenue <a href="rpkr.php" target="_blank">[?]</a></h2></div>
 <div id="Revenue"></div><br>
 <div align="center"><h2>Toxicity of Total Releases</h2></div>
 <div id="TPounds"></div><br>
-<div align="center"><h2>Percent of Preferred Waste Management Activities<a href="PPWMA.php" target="_blank">[?]</a></h2></div>
+<div align="center"><h2>Percent of Preferred Waste Management Activities<a href="ppwma.php" target="_blank">[?]</a></h2></div>
 <div id="PWMA"></div><br>
-<div align="center"><h2>Regional Contribution to Lifetime Cancer Risk<a href="CancerMethod.php" target="_blank">[?]</a></h2></div>
+<div align="center"><h2>Regional Contribution to Lifetime Cancer Risk<a href="cancermethod.php" target="_blank">[?]</a></h2></div>
 <div id="CancerRisk"></div>
 <div id="footer"> <?php include('footer.php'); ?> </div>
 </div>
