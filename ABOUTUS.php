@@ -19,7 +19,7 @@
 <br>
 
 
-<div style="text-align: center;"><IMG SRC="assets/img/teamPhoto.jpg" ALT="UCLA TRI Team" width="80%" height="auto"></div>
+<div style="text-align: center;"><img src="assets/img/teamphoto.jpg" alt="UCLA TRI Team" width="80%" height="auto"></div>
 
 <br>
 <p class= "p2">From left to right: Jon Van Lew, Fannie Hsieh, Larry Lai, Audrey Vinant-Tang, Ha Hyun Chung, Magali Delmas, Aanchal Kohil, Carmen Ehlinger, Amy Tat and Leanna Huynh.</p>
@@ -30,7 +30,7 @@
 <img class = "HorizontalLine" src = "assets/img/line.jpg" />
 <br>
 
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/Delmas4.jpg" alt = "Delmas" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/delmas4.jpg" alt = "Delmas" />
 
 <div class = "TextBox" id = "ImageRight">
 
@@ -60,7 +60,7 @@
 
 <br>
       
-<img class = "indivBioPic" id ="floatLeft" src = "assets/img/Aanchal.jpg" alt = "Aanchal"/>
+<img class = "indivBioPic" id ="floatLeft" src = "assets/img/aanchal.jpg" alt = "Aanchal"/>
 
 <div class = "TextBox" id = "ImageLeft">
 
@@ -93,7 +93,7 @@
 
 <br>
     
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/Leanna.jpg" alt = "Leanna" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/leanna.jpg" alt = "Leanna" />
 
 <div class = "TextBox" id = "ImageRight">
 
@@ -130,7 +130,7 @@
 
 <br>
       
-<img class = "indivBioPic" id ="floatLeft" src = "assets/img/Amy.jpg" alt = "Amy" />
+<img class = "indivBioPic" id ="floatLeft" src = "assets/img/amy.jpg" alt = "Amy" />
 
 <div class = "TextBox" id = "ImageLeft">
 
@@ -167,7 +167,7 @@
 
 
 
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/Audrey.jpg" alt = "Audrey" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/audrey.jpg" alt = "Audrey" />
 
 <div class = "TextBox" id = "ImageRight">
 
@@ -206,7 +206,7 @@
 <br>
 
 
-<img class = "indivBioPic" id ="floatLeft" src = "assets/img/Ha.jpg" alt = "Ha" />
+<img class = "indivBioPic" id ="floatLeft" src = "assets/img/ha.jpg" alt = "Ha" />
 
 <div class = "TextBox" id = "ImageLeft">
 
@@ -241,7 +241,7 @@
 
 <br>
       
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/Larry.jpg" alt = "Larry" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/larry.jpg" alt = "Larry" />
 
 <div class = "TextBox" id = "ImageRight">
 <h2>Larry Lai</h2>
@@ -276,7 +276,7 @@
 <br>
 
 
-<img class = "indivBioPic" id ="floatLeft" src = "assets/img/Carmen.jpg" alt = "Carmen" />
+<img class = "indivBioPic" id ="floatLeft" src = "assets/img/carmen.jpg" alt = "Carmen" />
 
 <div class = "TextBox" id = "ImageLeft">
 
@@ -311,7 +311,7 @@
 
 <br>
       
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/Fannie.jpg" alt = "Fannie" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/fannie.jpg" alt = "Fannie" />
 
 <div class = "TextBox" id = "ImageRight">
 

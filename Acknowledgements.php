@@ -17,7 +17,7 @@
   <br>
   <img class = "HorizontalLine" src = "assets/img/line.jpg" />
   <br>
-  <img class = "indivBioPic" id ="floatLeft" src = "assets/img/Rob.jpg" />
+  <img class = "indivBioPic" id ="floatLeft" src = "assets/img/rob.jpg" />
   
   <div class = "TextBox" id = "ImageLeft">
   
@@ -45,7 +45,7 @@
   
   <br>
   
-  <img class = "indivBioPic" id ="floatRight" src = "assets/img/Scott.jpg" />
+  <img class = "indivBioPic" id ="floatRight" src = "assets/img/scott.jpg" />
   
   <div class = "TextBox" id = "ImageRight">
   

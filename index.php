@@ -7,14 +7,14 @@
       Cal EcoMaps
     </title>
 
-	
+
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load('visualization', '1', {packages: ['corechart', 'table']});
     </script>
-	
+
 
 	<link rel="stylesheet" href="assets/css/style.css" />
 
@@ -25,8 +25,8 @@
     <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
 	<script type="text/javascript">
-	
-	
+
+
     // Variables and functions can be outside the window load event
       var TQRG = "1k_R9v0tRK9Ut2HsKSWKviDd4ZDFGmNh550C-dCeK";
 	  var PWMP = "12ORteQwTsrW8Zt2oeOcvy0u-AmfzFW473NuqYXcN";
@@ -37,8 +37,8 @@
 	  // This is the variable that will hold the Mapbox map
 	  var MAP;
 
-	// After the page loads, add the MAP and click events 
-	$(window).load(function() { 
+	// After the page loads, add the MAP and click events
+	$(window).load(function() {
 
 	// The MAP, with coordinates and zoom from the iframe
 	MAP = L.mapbox.map('map', 'calecomaps.iggm72f9').setView([33.984, -118.093], 10).addControl(L.mapbox.geocoderControl('calecomaps.iggm72f9', {
@@ -54,10 +54,10 @@
 	'calecomaps.vavvh43i'),
 }, {collapsed: false}).addTo(MAP);
 MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML).addLegend(document.getElementById('legend-content2').innerHTML);
-	
+
     // popup open event for the markers layer
     MAP.featureLayer.on('click', function(e) {
-	
+
     	// get the id of clicked marker
     	// use console.log(e) to see the event object;
     	var trif_id = e.layer.feature.properties["TRIF ID"];
@@ -67,18 +67,18 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
     		//.attr('href', 'javascript:void(0);') // reset the href
 			.attr('href', '#CompanyName')
     		.unbind('click') // unbind any prior click events
-    		.click(function() { 
+    		.click(function() {
     			// add our click event
 				$('#PIECV, #Table').css('height', '400px');
     			drawVisualization(trif_id);
 				drawVisualization2(trif_id);
 				drawVisualization3(trif_id);
 				drawVisualization4(trif_id);
-	
+
 			});
-			
-	
-	
+
+
+
 
     });
 
@@ -92,11 +92,11 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 		drawVisualization4(trif_id);
 	  });
 
-	});  
-	  
-    // Functions should generally be outside the window load event  
+	});
+
+    // Functions should generally be outside the window load event
 	  function drawVisualization(trif_id) {
-		// get the data		
+		// get the data
 		$.get("https://www.googleapis.com/fusiontables/v1/query", {sql:"SELECT * FROM "+TQRG+" WHERE TRIF_ID='"+trif_id+"'", key:apiKey}, function(response) {
 			var columns = response.columns;
 
@@ -121,10 +121,10 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 			var QR2010 = response.rows[0][14];
 			var QR2011 = response.rows[0][15];
 			var QR2012 = response.rows[0][16]
-			
-			
-			
-			
+
+
+
+
 			 // Create and populate the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Year');
@@ -132,13 +132,13 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
         data.addColumn('number', 'LA County '+ Industry +' Industry Average');
         data.addColumn('number', 'CA '+Industry+' Industry Average');
         data.addColumn('number', 'US '+Industry+' Industry Average');
-        data.addRows([ 
+        data.addRows([
           [String(QR2010),  Number(toxicReleased2010),      LaAVG2010,    	CAAVG2010, 			   USAVG2010],
           [String(QR2011),  Number(toxicReleased2011),      LaAVG2011,     CAAVG2011,             USAVG2011],
           [String(QR2012),  Number(toxicReleased2012),      LaAVG2012,       CAAVG2012,             USAVG2012],
-       
+
         ]);
-      
+
         // Create and draw the visualization.
         var ac = new google.visualization.ComboChart(document.getElementById('TotalQuantityReleased'));
         ac.draw(data, {
@@ -150,14 +150,14 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
           legend: { position: 'right', maxLines: 2, textStyle: {fontSize: 11} },
           seriesType: "line",
           series: {0: {type: "bars", color: String(Color), visibleInLegend: true}, 1:{color: 'black'}, 2:{color: 'darkgray'}, 3:{color: 'darkorange'}}
-			  
-			//String(Industry) 
-			  
+
+			//String(Industry)
+
 			});
-			
+
 		}, 'json');
       }
-	  
+
 	  function drawVisualization2(trif_id) {
         $.get("https://www.googleapis.com/fusiontables/v1/query", {sql:"SELECT * FROM "+PWMP+" WHERE TRIF_ID='"+trif_id+"'", key:apiKey}, function(response) {
 			var columns = response.columns;
@@ -180,21 +180,21 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 			var PWX2010 = response.rows[0][11]
 			var PWX2011 = response.rows[0][12]
 			var PWX2012 = response.rows[0][13]
-			
-			
+
+
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Year');
 			data.addColumn('number', 'Percentage of  Waste Management Practices');
 			data.addColumn('number', 'LA County '+Industry+' Industry Average');
 			data.addColumn('number', 'California '+Industry+' Industry Average');
-			data.addRows([ 
+			data.addRows([
             [String(PWX2010),  Number(PPWMP2010),     Number(LAAVG2010),   Number(CAAVG2010)],
             [String(PWX2011),  Number(PPWMP2011),		Number(LAAVG2011),       Number(CAAVG2011)],
             [String(PWX2012),  Number(PPWMP2012),     Number(LAAVG2012),        Number(CAAVG2012)],
-                   
+
 			]);
 
-       
+
 			// Create and draw the visualization.
 			var ac = new google.visualization.ComboChart(document.getElementById('PWMPV'));
 			ac.draw(data, {
@@ -206,14 +206,14 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 			legend: { position: 'right', maxLines: 2, textStyle: {fontSize: 12} },
 			seriesType: "line",
 			series: {0: {type: "bars", color: String(Color), visibleInLegend: true}, 1:{color: 'black'}, 2:{color: 'darkgray'}, 3:{color: 'darkorange'}}
-			  
-			 
-			  
+
+
+
 			});
-			
+
 		}, 'json');
       }
-	  
+
 	  function drawVisualization3(trif_id) {
         $.get("https://www.googleapis.com/fusiontables/v1/query", {sql:"SELECT * FROM "+PIEC+" WHERE TRIF_ID='"+trif_id+"'", key:apiKey}, function(response) {
 			var columns = response.columns;
@@ -227,28 +227,28 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 			var Color = response.rows[0][5];
 			var OthColor = response.rows [0][4];
 			var Industry = response.rows [0][6]
-			
-			
-			
+
+
+
 			var data = google.visualization.arrayToDataTable([
 			['Facility', 'Total Quantity Released (lbs)'],
 			[String(Name), Number(Rel2012)],
 			['Other '+Industry+' Facilities', Number(Oth2012)]
-			
+
 			]);
-        
+
 			var options = {
             title: '2012 '+Name+' Share (Pounds) of Total Toxic Releases in the '+Industry+' Industry in the LA County',
 			slices: {1: {offset: 0.1, color: String(OthColor),textStyle:{color: 'transparent'}}, 0: {color: String(Color)}},
             pieSliceTextStyle: {fontSize: 15, color: 'lightslategray'}, width: 600, height: 400,
 			sliceVisibilityThreshold: 0
-             			
-			
+
+
 			};
 			 new google.visualization.PieChart(document.getElementById('PIECV')).
             draw(data, options);
 		}, 'json');
-      }		
+      }
 	  function drawVisualization4(trif_id) {
 	$.get("https://www.googleapis.com/fusiontables/v1/query", {sql:"SELECT * FROM "+Stats+" WHERE TRIF_ID='"+trif_id+"'", key:apiKey}, function(response) {
 			var columns = response.columns;
@@ -268,15 +268,15 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 			var Industry = response.rows [0][1];
 			var address= response.rows [0] [3];
 			var TXP= response.rows [0][18]
-			
-		$('#CompanyName').html("<h2 id=\"Name\"><span class=\"subheading\">Facility Name:</span> " + Name + "</h2>");	
+
+		$('#CompanyName').html("<h2 id=\"Name\"><span class=\"subheading\">Facility Name:</span> " + Name + "</h2>");
 		$('#SCORE').html("<h2 id=\"Score\"><span class=\"subheading\">Environmental Impact Score:</span> " + Math.round(Score) + " out of 100 <a href='eismethodology.php' target='_blank'>[?]</a></h2>");
 		$('#TypeIndustry').html("<h2 id=\"industry\"><span class=\"subheading\">Industry NAICS:</span> " + Industry + "</h2>");
 		$('#Note').html("<h2 id=\"Note\"><span class=\"subheading\">Graphs: When the year is displayed as N/A, the facility did not report to the TRI for that year.</span> </h2>");
 		$('#noteimpact').html("<h3 id=\"backtop\">A higher score implies a greater impact on the environment.</h3>");
 		$('#top').html("<h3 id=\"backtop\"><a href=#>Back to top</a></h3>");
 		$('#top2').html("<h3 id=\"backtop2\"><a href=#>Back to top</a></h3>");
-			
+
       // Create and populate the data table.
       var data = google.visualization.arrayToDataTable([
         ['Facility Facts (2012)', 'Numbers'],
@@ -289,34 +289,33 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 		['California Protected Areas', CPA+' within a 1-mile radius' ],
 		['Schools', Schools+' within a 1-mile radius'],
 		['Address', address]
+
 		
-		<!--<a href="CancerandetcMethod.php" target="_blank">[?]</a>-->
-		<!--<a href="CancerandetcMethod.php" target="_blank">[?]</a>-->
       ]);
-	  
 
 
-    
+
+
       // Create and draw the visualization.
       visualization = new google.visualization.Table(document.getElementById('Table'));
         visualization.draw(data, {allowHtml: true});
     }, 'json');
-      }		
-	  
-	
-    
+      }
+
+
+
 
     google.setOnLoadCallback(drawVisualization);
-	  
 
-		
+
+
       // google.setOnLoadCallback(drawVisualization(trif_id));
-	  
+
     </script>
   </head>
   <body>
 <?php include_once("analyticstracking.php") ?>
-<div class="wrapper"> 
+<div class="wrapper">
 
 
 <?php include('header.php'); ?>
@@ -327,7 +326,7 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 
 
   	<!-- The div for the MAP -->
-  	
+
   	<div id="map"></div>
 	<div id='legend-content' style='display: none;'>
   <div class='my-legend'>
@@ -444,7 +443,7 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 	<div id="top"></div>
 	<div id="TypeIndustry"></div><br>
 	<div id="SCORE"></div>
-    <div id="noteimpact"></div>	
+    <div id="noteimpact"></div>
 <br>
 </div>
 <div class="TABLEPIE">
@@ -453,7 +452,7 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
     <div id="TotalQuantityReleased"></div>
 	<div id="PWMPV"></div>
 </div>
-<div class="wrapper"> 
+<div class="wrapper">
  <div id="Note"></div>
  <div id="top2"></div>
  <br><br>
@@ -462,11 +461,11 @@ MAP.legendControl.addLegend(document.getElementById('legend-content').innerHTML)
 <br>
  </div>
 	 <!-- example link -->
-	
 
-	
 
-</div>	
+
+
+</div>
 
 
 </body>
