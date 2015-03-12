@@ -30,7 +30,7 @@
 <img class = "HorizontalLine" src = "assets/img/line.jpg" />
 <br>
 
-<img class = "indivBioPic" id ="floatRight" src = "assets/img/delmas4.jpg" alt = "Delmas" />
+<img class = "indivBioPic" id ="floatRight" src = "assets/img/delmas.jpg" alt = "Delmas" />
 
 <div class = "TextBox" id = "ImageRight">
 

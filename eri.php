@@ -11,7 +11,7 @@
 <?php include('header.php'); ?>
 <h1>Environmental Impact Indicators</h1>
 
-Each facility’s Cal EcoMaps Environmental Impact Score was based on five environmental impact indicators:  <br><br><a href="toaltoxicreleases.php" target="_blank">1)the total amount of toxic releases</a> <br> <a href="rpkr.php" target="_blank">2)toxic releases per $1000 of revenue</a> <br> <a href="toxicity.php" target="_blank">3)toxicity of total releases</a> <br> <a href="cancermethod.php" target="_blank">4)regional contribution to lifetime cancer risk due to air emissions</a> <br> <a href="ppwma.php" target="_blank">5) waste managed through recycling, energy recovery, and treatment</a> <br><br>These five variables were chosen because they represent the impact of each facility’s toxic releases on the environment and public health. 
+Each facility’s Cal EcoMaps Environmental Impact Score was based on five environmental impact indicators:  <br><br><a href="totaltoxicreleases.php" target="_blank">1)the total amount of toxic releases</a> <br> <a href="rpkr.php" target="_blank">2)toxic releases per $1000 of revenue</a> <br> <a href="toxicity.php" target="_blank">3)toxicity of total releases</a> <br> <a href="cancermethod.php" target="_blank">4)regional contribution to lifetime cancer risk due to air emissions</a> <br> <a href="ppwma.php" target="_blank">5) waste managed through recycling, energy recovery, and treatment</a> <br><br>These five variables were chosen because they represent the impact of each facility’s toxic releases on the environment and public health. 
 
 <br><br>
 <div id="footer"> <?php include('footer.php'); ?> </div>

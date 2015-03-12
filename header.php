@@ -40,7 +40,7 @@
 				  <li class="divider"></li>
 				  <li><t><a href="eri.php" style="color: DarkGreen">Environmental Impact Indicators</a></t></li>
 				  <li class="divider"></li>
-                  <li><a href="toaltoxicreleases.php">Total Toxic Releases</a></li>
+                  <li><a href="totaltoxicreleases.php">Total Toxic Releases</a></li>
                   <li><a href="rpkr.php">Releases per $1000 Revenue</a></li>
 				  <li><a href="toxicity.php">Toxicity of Total Releases</a></li>
 				  <li><a href="cancermethod.php">Regional Contribution to Lifetime Cancer Risk </a></li>

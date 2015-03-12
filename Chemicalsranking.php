@@ -236,7 +236,7 @@
 <body>
 <div class="wrapper"> 
 <?php include('header.php'); ?>
-<div align="center"><h2>Total Toxic Releases <a href="TOTALTOXICRELEASES.php " target="_blank">[?]</a></h2></div>
+<div align="center"><h2>Total Toxic Releases <a href="totaltoxicreleases.php" target="_blank">[?]</a></h2></div>
 <div id="ToxicReleases"></div><br>
 <div align="center"><h2>Releases per $1000 Revenue <a href="rpkr.php" target="_blank">[?]</a></h2></div>
 <div id="Revenue"></div><br>

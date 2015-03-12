@@ -16,7 +16,7 @@ The goal of Cal EcoMaps is to better understand and communicate toxic chemical r
 <h2>What does the Cal EcoMaps EIS Measure?</h2> <br><br>
 
 
-Facilities with a lower Cal EcoMaps EIS have less impact on the environment and public health based on the five environmental impact indicators: <a href="toaltoxicreleases.php" target="_blank">1)</a> the total amount of toxic releases, <a href="rpkr.php" target="_blank">2)</a> toxic releases per $1000 of revenue, <a href="toxicity.php" target="_blank">3)</a> toxicity of total releases, <a href="cancermethod.php" target="_blank">4)</a> regional contribution to lifetime cancer risk due to air emissions, and <a href="ppwma.php" target="_blank">5)</a> waste managed through recycling, energy recovery, and treatment. The Cal EcoMaps EIS is found on facility profiles as well as by industry here.  
+Facilities with a lower Cal EcoMaps EIS have less impact on the environment and public health based on the five environmental impact indicators: <a href="totaltoxicreleases.php" target="_blank">1)</a> the total amount of toxic releases, <a href="rpkr.php" target="_blank">2)</a> toxic releases per $1000 of revenue, <a href="toxicity.php" target="_blank">3)</a> toxicity of total releases, <a href="cancermethod.php" target="_blank">4)</a> regional contribution to lifetime cancer risk due to air emissions, and <a href="ppwma.php" target="_blank">5)</a> waste managed through recycling, energy recovery, and treatment. The Cal EcoMaps EIS is found on facility profiles as well as by industry here.  
 <br><br>
 <h2>How was the Cal EcoMaps EIS calculated? </h2><br><br>
 
